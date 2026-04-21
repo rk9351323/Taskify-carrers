@@ -46,6 +46,8 @@
     .nav.active ul {
         flex-direction: column;
     }
+   
+    
 }
 nav {
     display: flex;
