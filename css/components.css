@@ -34,7 +34,8 @@
         position: absolute;
         right: 0;
         top: 60px;
-        background-color:  transparent;
+        border-radius: 6px;
+        background-color:  var(--primary-color);
         z-index: 1000;
         
     }
