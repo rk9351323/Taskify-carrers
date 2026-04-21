@@ -1,17 +1,22 @@
 document.addEventListener("DOMContentLoaded", function() {
+  // Determine correct base path depending on current page location
+  const basePath = window.location.pathname.includes('/pages/') ? '../' : './';
+
   // Load Header
-  fetch('../components/header.html')
+  fetch(basePath + 'components/header.html')
     .then(response => response.text())
     .then(data => {
-      document.getElementById('header').innerHTML = data;
+      // Fix relative paths in the loaded HTML based on the current page's depth
+      document.getElementById('header').innerHTML = data.replace(/\.\.\//g, basePath);
     })
     .catch(error => console.error('Error loading header:', error));
 
   // Load Footer
-  fetch('../components/footer.html')
+  fetch(basePath + 'components/footer.html')
     .then(response => response.text())
     .then(data => {
-      document.getElementById('footer').innerHTML = data;
+      // Fix relative paths in the loaded HTML based on the current page's depth
+      document.getElementById('footer').innerHTML = data.replace(/\.\.\//g, basePath);
     })
     .catch(error => console.error('Error loading footer:', error));
 });
