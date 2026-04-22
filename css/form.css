@@ -42,6 +42,9 @@ h1,h2{
 .form-step p {
     color: var(--secondary-color);
 }
+#showleaderShip{
+  display: none;
+}
 
 .progress-bar {
   width: 100%;

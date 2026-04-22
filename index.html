@@ -6,7 +6,7 @@
   <title>Apply – Taskify Careers</title>
   <meta name="description" content="Apply for jobs at Taskify with our simple online application form.">
   <link rel="stylesheet" href="./css/base.css">
-  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/careers.css">
   <link rel="stylesheet" href="./css/components.css">
   <link rel="stylesheet" href="./css/form.css">
 </head>
@@ -21,9 +21,9 @@
       <!-- Step 1 -->
       <div class="form-step active">
         <h2>Step 1: Personal Info</h2>
-        <input type="text" name="name" placeholder="Full Name" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="text" name="name" placeholder="Full Name"  id="name">
+        <input type="email" name="email" placeholder="Email"  id="email" required>
+        <input type="tel" name="phone" placeholder="Phone Number" id="phone" required>
         <div class="btn-group">
            <button type="button" class="next">Next</button>
          </div>
@@ -32,8 +32,9 @@
       <!-- Step 2 -->
       <div class="form-step">
         <h2>Step 2: Experience</h2>
-        <input type="number" name="experience" placeholder="Years of Experience" required>
-        <input type="text" name="skills" placeholder="Key Skills (comma separated)" required>
+        <input type="number" name="experience" placeholder="Years of Experience" id="experience" required>
+        <textarea name="showleaderShip" id="showleaderShip" placeholder="write your leadership experience and role." rows="6"></textarea>
+        <input type="text" name="skills" placeholder="Key Skills (comma separated)" id="skills" required>
         <div class="btn-group">
          <button type="button" class="prev">Back</button>
          <button type="button" class="next">Next</button>
@@ -43,7 +44,7 @@
       <!-- Step 3 -->
       <div class="form-step">
         <h2>Step 3: Upload Resume</h2>
-        <input type="file" name="resume" accept=".pdf,.doc,.docx" required>
+        <input type="file" name="resume" accept=".pdf,.doc,.docx"  id="resume" required>
       <div class="btn-group">
         <button type="button" class="prev">Back</button>
          <button type="button" class="next">Next</button>

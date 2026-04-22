@@ -1,0 +1,147 @@
+/* --- Main Content Area --- */
+main {
+    flex-grow: 1;
+    padding: 3rem 5rem 5rem 5rem; /* Bottom padding increased */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Hero Title & Subtitle */
+.hero-section {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    letter-spacing: -0.5px;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* --- FAQ Grid & Cards --- */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 2.5rem 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.icon-container {
+    margin-bottom: 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-container .emoji-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+    height: 70px;
+    width: 70px;
+    background: #f0fdf4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-title {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #1a202c;
+    margin-bottom: 0.75rem;
+}
+
+.card-description {
+    font-size: 0.95rem;
+    color: #718096;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    flex-grow: 1; /* Pushes list down for alignment */
+}
+
+/* Answer Box: Initial state hidden hai */
+.answer-box {
+    display: none; 
+    background-color: #f1f5f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #1e293b;
+    border-left: 4px solid #2f855a; /* Green left border for professional look */
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    /* Animation jab box show hoga */
+    animation: fadeIn 0.3s ease-in;
+}
+.card-button {
+    background-color: #fff;
+    color: #1a202c;
+    border: 1px solid var(--secondary-color);
+    padding: 0.75rem 1.75rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+    margin-top: auto; /* Ensures button is at the bottom */
+}
+
+.card-button:hover {
+    background-color: #edf2f7;
+    border-color: #cbd5e0;
+}
+/* --- FAQ Card Animations & Answer Box --- */
+
+/* Fade-in effect definition */
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(-10px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+/* --- Interactive Elements --- */
+
+/* Button click effect: Thoda chota hoga dabne par */
+.card-button:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+}

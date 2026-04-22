@@ -29,9 +29,7 @@ document.addEventListener("click", function(event) {
   if (target) {
     // Traverse up to find the nav element next to it or query it globally
     let nav = document.querySelector("nav");
-    nav.addEventListener("click", function(e) {
-      e.preventDefault();
-    });
+   
     if (nav) {
       nav.classList.toggle("active");
     }

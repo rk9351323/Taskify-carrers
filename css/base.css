@@ -19,6 +19,7 @@ html,body{
     --terinary-color:white;
     --fourth-color:white;
     --fifth-color:#212121;
+    --sixth-color:white;
 }
 .dark-mode{
     --primary-color:#212121;
@@ -26,11 +27,12 @@ html,body{
     --terinary-color:#474545;
     --fourth-color:#f0f8ff;
     --fifth-color:#212121;
+    --sixth-color:#212121;
 
 }
-
-#icon{
-    width: 30px;
+/* dark mode toggle */
+ #icon{
+    width: 26px;
     cursor: pointer;
 }
 

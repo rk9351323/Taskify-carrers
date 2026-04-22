@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Taskify-careers</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/faq.css">
+    
+
+</head>
+<body>
+    <div id="header"></div>
+    <main>
+        <div class="hero-section">
+            <h1 class="hero-title">Frequently Asked Questions</h1>
+            <p class="hero-subtitle">Find quick answers to common queries about our application process, job opportunities, and company culture.</p>
+        </div>
+
+       <div class="card-grid">
+    <div class="card">
+        <div class="icon-container"><span class="emoji-icon">📄</span></div>
+        <h2 class="card-title">Application Process</h2>
+        <p class="card-description">Understand our hiring stages.</p>
+        
+        <div id="ans1" class="answer-box">
+            <p>Process takes 2-3 weeks. Stages: Resume screening, Tech interview, and HR round.</p>
+        </div>
+        
+        <button class="card-button" onclick="toggleAnswer('ans1')">View Details</button>
+    </div>
+
+    <div class="card">
+        <div class="icon-container"><span class="emoji-icon">🤝</span></div>
+        <h2 class="card-title">Job Opportunities</h2>
+        <p class="card-description">Explore open positions.</p>
+        
+        <div id="ans2" class="answer-box">
+            <p>New jobs are posted every Monday. We offer 100% remote roles for Engineering.</p>
+        </div>
+        
+        <button class="card-button" onclick="toggleAnswer('ans2')">Browse Roles</button>
+    </div>
+
+    <div class="card">
+        <div class="icon-container"><span class="emoji-icon">🎯</span></div>
+        <h2 class="card-title">Company Culture</h2>
+        <p class="card-description">Learn about our values.</p>
+        
+        <div id="ans3" class="answer-box">
+            <p>We value transparency and work-life balance. We have a 4-day work week culture.</p>
+        </div>
+        
+        <button class="card-button" onclick="toggleAnswer('ans3')">Discover Culture</button>
+    </div>
+</div>
+    </main>
+
+    <div id="footer"></div>
+    <script src="../js/loader.js"></script>
+    <script src="../js/utils.js"></script>
+</body>
+</html>
