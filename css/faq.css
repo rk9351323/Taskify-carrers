@@ -1,10 +1,16 @@
 /* --- Main Content Area --- */
 main {
     flex-grow: 1;
-    padding: 3rem 5rem 5rem 5rem; /* Bottom padding increased */
+    padding: 3rem 1rem 5rem 1rem; /* Adjust padding for mobile centering */
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media (min-width: 768px) {
+    main {
+        padding: 3rem 5rem 5rem 5rem;
+    }
 }
 
 /* Hero Title & Subtitle */
@@ -32,15 +38,16 @@ main {
 /* --- FAQ Grid & Cards --- */
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2.5rem;
     width: 100%;
     max-width: 1200px;
+    padding: 0 10px;
 }
 
 .card {
     background-color: #fff;
-    padding: 2.5rem 2rem;
+    padding: 1rem 2rem;
     border-radius: 1rem;
     text-align: center;
     border: 1px solid #e2e8f0;
@@ -144,4 +151,7 @@ main {
 .card-button:active {
     transform: scale(0.95);
     transition: transform 0.1s ease;
+}
+@media(max-width: 626px){
+
 }
