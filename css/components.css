@@ -7,9 +7,13 @@
     width: 100%;
     padding: 0 20px;
     font-weight: bold;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+.header-content {
+    display: contents; /* Parent #header ki flex properties use karne ke liye */
 }
 .logo {
     font-size: 1.5rem;
@@ -86,6 +90,7 @@ nav ul a {
     padding: 1rem;
     margin-top:auto;
     color: var(--secondary-color);
+    position: -webkit-sticky;
     position: sticky;
     bottom: 0;
     z-index: 1000;
